@@ -1,0 +1,14 @@
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.AssemblyInfoInputs.cache
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.AssemblyInfo.cs
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.csproj.CoreCompileInputs.cache
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\bin\Debug\net8.0\Projekt 1.exe
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\bin\Debug\net8.0\Projekt 1.deps.json
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\bin\Debug\net8.0\Projekt 1.runtimeconfig.json
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\bin\Debug\net8.0\Projekt 1.dll
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\bin\Debug\net8.0\Projekt 1.pdb
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.dll
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\refint\Projekt 1.dll
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.pdb
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\Projekt 1.genruntimeconfig.cache
+C:\Users\rasmus.mattssonboll\Documents\Programmering 1\Projekt 1\Projekt 1\obj\Debug\net8.0\ref\Projekt 1.dll
