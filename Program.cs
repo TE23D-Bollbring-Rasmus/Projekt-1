@@ -5,7 +5,7 @@ int energi = 100;
 int room = 0;
 
 string[] roomDescriptions = {"Du har precis vaknat på en äng", "You are in the engine room"};
-
+Console.WriteLine("Du vaknar upp i ett gammalt, övergivet slott. Väggarna är täckta av damm och spindelnät, och en svag vind ekar genom korridorerna. Framför dig finns fyra dörrar, var och en leder till ett annat rum. Ditt öde beror på vilket rum du väljer att utforska.");
 while (room != 4) {
 Console.WriteLine(roomDescriptions[room]);
 Console.WriteLine("Åt vilket håll vill du gå?");
