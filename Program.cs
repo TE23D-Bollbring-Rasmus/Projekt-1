@@ -30,7 +30,7 @@ void story() {
                 room = 4;
             }
         }
-
+        
         HändelseIRum();
     }
 }
