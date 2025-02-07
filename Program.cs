@@ -4,26 +4,48 @@ int energi = 100;
 
 int room = 0;
 
-string[] roomDescriptions = {"Du har precis vaknat på en äng", "You are in the engine room"};
-Console.WriteLine("Du vaknar upp i ett gammalt, övergivet slott. Väggarna är täckta av damm och spindelnät, och en svag vind ekar genom korridorerna. Framför dig finns fyra dörrar, var och en leder till ett annat rum. Ditt öde beror på vilket rum du väljer att utforska.");
-while (room != 4) {
-Console.WriteLine(roomDescriptions[room]);
-Console.WriteLine("Åt vilket håll vill du gå?");
-string riktning = Console.ReadLine();
+string[] rummen = {
+    "Du vaknar upp i ett gammalt, övergivet slott. Väggarna är täckta av damm och spindelnät, och en svag vind ekar genom korridorerna. Framför dig finns fyra olika håll du kan gå, var och en leder till ett annat rum. Ditt öde beror på vilket rum du väljer att utforska.", 
+    "Du går in i ett gammalt bibliotek. Böckerna är täckta av damm, och det känns som att någon viskar mellan hyllorna.",
+    "Du befinner dig i en vapenkammare full av rostiga svärd och tunga rustningar.",
+    "Du står i en mörk fängelsehåla. Kalla kedjor hänger från väggarna.",
+    "Du når en stor sal där en skuggig kung väntar vid sitt bord."
+};
 
-if (room == 0) {
-if (riktning == "vänster") {
-room = 1;
-} else if (riktning == "höger"){
-room = 2;
+void story() {
+    while (room != 4) {
+        Console.WriteLine(rummen[room]);
+        Console.WriteLine($"HP: {hp}, Hunger: {hunger}, Energi: {energi}");
+        Console.WriteLine("Åt vilket håll vill du gå? (vänster, höger, framåt, bakåt)");
+        string riktning = Console.ReadLine().ToLower();
+
+        if (room == 0) {
+            if (riktning == "vänster") {
+                room = 1;
+            } else if (riktning == "höger") {
+                room = 2;
+            } else if (riktning == "framåt") {
+                room = 3;
+            } else if (riktning == "bakåt") {
+                room = 4;
+            }
+        }
+
+        HändelseIRum();
+    }
 }
- else if (riktning == "framåt"){
-room = 3;
+
+void HändelseIRum() {
+    if (room == 1) {
+        Console.WriteLine("Du hittar en gammal bok. Läser du den? (ja/nej)");
+        if (Console.ReadLine().ToLower() == "ja") {
+            Console.WriteLine("Boken förbättrar ditt sinne, men du blir trött.");
+            energi -= 10;
+        }
+    }
+
 }
- else if (riktning == "bakåt"){
-room = 4;
-}
-}
-}
-Console.WriteLine(roomDescriptions[room]);
+
+story();
+Console.WriteLine("Spelet är slut.");
 Console.ReadLine();
