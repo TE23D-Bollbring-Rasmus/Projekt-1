@@ -40,32 +40,44 @@ void HändelseIRum() {
         Console.WriteLine("Du hittar en gammal bok. Läser du den? (ja/nej)");
         if (Console.ReadLine().ToLower() == "ja") {
             Console.WriteLine("Boken förbättrar ditt sinne, men du blir trött.");
-            energi -= 10;
-            room = 0;
+            energi -= 30;
         }
+        else{
+            Console.WriteLine("Boken gör en besvärjelse på dig och du blir hunrgigare");
+            hunger -= 50;
+        }
+        room = 0;
     }
     else if (room == 2) {
         Console.WriteLine("Du ser ett svärd. Tar du upp det? (ja/nej)");
         if (Console.ReadLine().ToLower() == "ja") {
             Console.WriteLine("Svärdet är tungt, men du känner dig starkare.");
-            hp += 10;
-            room = 0;
+            hp += 30;
         }
+        else{
+            Console.WriteLine("Du blir huggen av svärdet");
+            hp -= 30;
+        }
+        room = 0;
     }
     else if (room == 3) {
         Console.WriteLine("Du hör någon viska. Undersöker du? (ja/nej)");
         if (Console.ReadLine().ToLower() == "ja") {
             Console.WriteLine("En skugga attackerar dig!");
-            hp -= 15;
-            room = 0;
+            hp -= 45;
         }
+        else{
+            Console.WriteLine("Du uindviker skuggan och vilar, du får mer energi");
+            energi += 25;
+        }
+        room = 0;
     }
     else if (room == 4){
         hp -= 100;
         hunger -= 100;
         energi -= 100;
     }
-    if (energi == 0 || hp == 0|| energi == 0){
+    if (energi <= 0 || hp <= 0 || energi <= 0){
         Console.WriteLine("Du dog");
     }
 }
